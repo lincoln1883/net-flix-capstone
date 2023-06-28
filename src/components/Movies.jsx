@@ -72,7 +72,7 @@ const Movies = () => {
               <Search filterChange={handleCategory} searchChange={handleSearch} />
             </div>
           </div>
-          <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-3 px-3 pr-3 mb-8">
+          <div className="grid grid-cols-2 gap-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 justify-center sm:gap-3 px-3 pr-3 mb-8">
             {filteredMovies.map((movie) => (
               <Movie
                 key={movie.id}
@@ -108,7 +108,7 @@ const Movies = () => {
             <Search filterChange={handleCategory} searchChange={handleSearch} />
           </div>
         </div>
-        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-3 px-3 pr-3 mb-8">
+        <div className="grid grid-cols-2 gap-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 justify-center sm:gap-3 px-3 pr-3 mb-8">
           {movies.map((movie) => (
             <Movie
               key={movie.id}

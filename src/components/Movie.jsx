@@ -24,15 +24,14 @@ const Movie = ({
         tabIndex={0}
       >
         <img className="w-full" src={image} alt={title} />
-        <div className="flex flex-col gap-3 px-6 py-4">
-          <h3 className="font-bold text-xl mb-2">
+        <div className="flex flex-col gap-1 px-2 py-3 sm:gap-3 sm:px-6 sm:py-4">
+          <h3 className="font-bold text-lg sm:text-xl mb-2 text-ellipsis">
             Title:
             {title}
           </h3>
           <h5 className="text-gray-700 text-base">
             Released year:
             {year}
-
           </h5>
           <p className="text-gray-700 text-base">
             Rating:

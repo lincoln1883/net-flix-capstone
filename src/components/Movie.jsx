@@ -23,7 +23,7 @@ const Movie = ({
         role="button"
         tabIndex={0}
       >
-        <img className="w-full" src={image} alt={title} title={title} />
+        <img className="w-full" src={image} alt={title} />
         <div className="flex flex-col gap-3 px-6 py-4">
           <h3 className="font-bold text-xl mb-2">
             Title:
@@ -45,17 +45,18 @@ const Movie = ({
 };
 
 Movie.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
   title: PropTypes.string,
   image: PropTypes.string,
   rating: PropTypes.number,
   year: PropTypes.string,
 };
 Movie.defaultProps = {
-  title: '',
+  id: 0,
   image: '',
+  title: '',
   rating: 0,
-  year: 0,
+  year: '',
 };
 
 export default Movie;

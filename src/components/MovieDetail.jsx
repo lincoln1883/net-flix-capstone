@@ -15,6 +15,7 @@ const MovieDetail = () => {
         <img className="px-4 w-auto h-52 sm:w-full sm:h-full" src={movie.image} alt={movie.title} />
         <div className="flex flex-col items-center sm:items-start">
           <h3 className="font-bold mt-1 px-5 text-xl text-center sm:text-start">
+            Title:
             {movie.title}
           </h3>
           <div className="flex flex-wrap justify-evenly sm:gap-2 px-5 gap-0 mb-2 mt-2">

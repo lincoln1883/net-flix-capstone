@@ -14,6 +14,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [📹 Video Demo ](#-video-demo-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)

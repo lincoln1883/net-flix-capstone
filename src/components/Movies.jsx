@@ -64,10 +64,15 @@ const Movies = () => {
         )}
         {searchStatus === 'succeeded' && (
         <>
-          <div className="w-11/12 sm:w-9/12 mx-auto mb-5">
-            <Search filterChange={handleCategory} searchChange={handleSearch} />
+          <div className="flex flex-col items-center sm:flex-row justify-center mx-auto">
+            <div>
+              <h4 className="text-xl sm:text-2xl mb-5 mr-4 font-bold">Filter by title:</h4>
+            </div>
+            <div className="w-9/12 sm:w-6/12 mb-5">
+              <Search filterChange={handleCategory} searchChange={handleSearch} />
+            </div>
           </div>
-          <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-3 px-3 pr-3">
+          <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-3 px-3 pr-3 mb-8">
             {filteredMovies.map((movie) => (
               <Movie
                 key={movie.id}
@@ -95,10 +100,15 @@ const Movies = () => {
       {movieStatus === 'failed' && <div className="text-center">{movieError}</div>}
       {movieStatus === 'succeeded' && (
       <>
-        <div className="w-9/12 mx-auto mb-5">
-          <Search filterChange={handleCategory} searchChange={handleSearch} />
+        <div className="flex flex-col items-center sm:flex-row justify-center mx-auto">
+          <div>
+            <h4 className="text-xl sm:text-2xl mb-5 mr-4 font-bold">Filter by title:</h4>
+          </div>
+          <div className="w-9/12 sm:w-6/12 mb-5">
+            <Search filterChange={handleCategory} searchChange={handleSearch} />
+          </div>
         </div>
-        <div className="grid grid-cols-3 gap-3 px-3 pr-3">
+        <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-3 px-3 pr-3 mb-8">
           {movies.map((movie) => (
             <Movie
               key={movie.id}

@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const APIKEY = process.env.REACT_APP_API_KEY;
@@ -45,7 +45,7 @@ const movieSlice = createSlice({
         average: movie.vote_average,
         popularity: movie.popularity,
       }));
-      state.movies = moviesList;
+      state.movies = [...moviesList];
     });
     builder.addCase(fetchMovies.rejected, (state, action) => {
       state.status = 'failed';
